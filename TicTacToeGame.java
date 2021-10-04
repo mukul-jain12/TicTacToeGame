@@ -4,9 +4,9 @@ public class TicTacToeGame {
 	
 	public static void main(String args[]) {
 		
+		System.out.println("Let's Play Tic Tac Toe Game");
 		//calling UC1 method
 		UC1();
-		
 	}
 	
 	private static void UC1() {
