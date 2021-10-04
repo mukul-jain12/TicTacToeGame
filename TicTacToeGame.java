@@ -16,8 +16,8 @@ public class TicTacToeGame {
 		
 		//assign elements in empty array
 		for (int a = 1; a < 10; a++) {
-            board[a] = (char)a;
-        }
+		    board[a] = (char)a;
+		}
 		
 		System.out.println(board);
 		
