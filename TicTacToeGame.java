@@ -6,10 +6,10 @@ public class TicTacToeGame {
 		
 		System.out.println("Let's Play Tic Tac Toe Game");
 		//calling UC1 method
-		UC1();
+		createBoard();
 	}
 	
-	private static void UC1() {
+	private static void createBoard() {
 		
 		//define array
 		char[] board= new char[10];
