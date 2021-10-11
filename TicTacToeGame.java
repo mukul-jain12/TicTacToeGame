@@ -1,25 +1,37 @@
 package tictactoegame;
 
+import java.util.Scanner;
+
 public class TicTacToeGame {
 	
 	public static void main(String args[]) {
 		
 		System.out.println("Let's Play Tic Tac Toe Game");
 		//calling UC1 method
-		UC1();
+		ChooseXnO();
 	}
 	
-	private static void UC1() {
+	
+	//choose method
+	private static void ChooseXnO() {
 		
-		//define array
-		char[] board= new char[10];
+		//constant
+		final String playerwith_X = "X";
 		
-		//assign elements in empty array
-		for (int a = 1; a < 10; a++) {
-		    board[a] = (char)a;
-		}
+		//taking user input 
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Type X or O to choose:");
+		String player = sc.next();
 		
-		System.out.println(board);
+		//assign X or O to player and computer
+		if (player.equals(playerwith_X))
+			System.out.println("Player is X and computer is O");
+		else
+			System.out.println("Player is O and computer is X");
 		
+		
+		//close scanner
+		sc.close();
 	}
+	
 }
